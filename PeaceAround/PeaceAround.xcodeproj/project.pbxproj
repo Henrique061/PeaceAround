@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		3D9A4EB1286FBB4100B9C555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */; };
 		3D9A4EB3286FBB4100B9C555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */; };
-		3D9A4EB5286FBB4100B9C555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB4286FBB4100B9C555 /* ViewController.swift */; };
 		3D9A4EB8286FBB4100B9C555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB6286FBB4100B9C555 /* Main.storyboard */; };
 		3D9A4EBA286FBB4400B9C555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB9286FBB4400B9C555 /* Assets.xcassets */; };
 		3D9A4EBD286FBB4400B9C555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A4EBB286FBB4400B9C555 /* LaunchScreen.storyboard */; };
 		3D9A4EC8286FBB4400B9C555 /* PeaceAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EC7286FBB4400B9C555 /* PeaceAroundTests.swift */; };
 		3D9A4ED2286FBB4400B9C555 /* PeaceAroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */; };
 		3D9A4ED4286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */; };
+		3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		3D9A4EAD286FBB4100B9C555 /* PeaceAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D9A4EB4286FBB4100B9C555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D9A4EB7286FBB4100B9C555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D9A4EB9286FBB4400B9C555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9A4EBC286FBB4400B9C555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		3D9A4ECD286FBB4400B9C555 /* PeaceAroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceAroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITests.swift; sourceTree = "<group>"; };
 		3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,10 @@
 		3D9A4EAF286FBB4100B9C555 /* PeaceAround */ = {
 			isa = PBXGroup;
 			children = (
-				3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */,
-				3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */,
-				3D9A4EB4286FBB4100B9C555 /* ViewController.swift */,
-				3D9A4EB6286FBB4100B9C555 /* Main.storyboard */,
+				3D9A4EE2286FBC1000B9C555 /* HeadsetAlert */,
+				3D9A4EE3286FBC6D00B9C555 /* Storyboard */,
+				3D9A4EE4286FBC8C00B9C555 /* Delegates */,
 				3D9A4EB9286FBB4400B9C555 /* Assets.xcassets */,
-				3D9A4EBB286FBB4400B9C555 /* LaunchScreen.storyboard */,
 				3D9A4EBE286FBB4400B9C555 /* Info.plist */,
 			);
 			path = PeaceAround;
@@ -125,6 +123,32 @@
 				3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */,
 			);
 			path = PeaceAroundUITests;
+			sourceTree = "<group>";
+		};
+		3D9A4EE2286FBC1000B9C555 /* HeadsetAlert */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */,
+			);
+			path = HeadsetAlert;
+			sourceTree = "<group>";
+		};
+		3D9A4EE3286FBC6D00B9C555 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A4EB6286FBB4100B9C555 /* Main.storyboard */,
+				3D9A4EBB286FBB4400B9C555 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3D9A4EE4286FBC8C00B9C555 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */,
+				3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9A4EB5286FBB4100B9C555 /* ViewController.swift in Sources */,
+				3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */,
 				3D9A4EB1286FBB4100B9C555 /* AppDelegate.swift in Sources */,
 				3D9A4EB3286FBB4100B9C555 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,6 +464,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 66824UF4JS;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PeaceAround/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,6 +494,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 66824UF4JS;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PeaceAround/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
