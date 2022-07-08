@@ -10,6 +10,27 @@ import UIKit
 
 class HeadsetAlertController: UIViewController
 {
+    let sb: UIStoryboard
+    let hvcIdent: UIViewController
+    let navBarAppearance: UINavigationBarAppearance
+    
+    // inits ////////////////////////////////////////////////////////////////
+    init()
+    {
+        self.sb = UIStoryboard(name: "Main", bundle: nil)
+        self.hvcIdent = sb.instantiateViewController(withIdentifier: "HomeViewController")
+        self.navBarAppearance = UINavigationBarAppearance()
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+        self.sb = UIStoryboard(name: "Main", bundle: nil)
+        self.hvcIdent = sb.instantiateViewController(withIdentifier: "HomeViewController")
+        self.navBarAppearance = UINavigationBarAppearance()
+        super.init(coder: aDecoder)
+    }
+    
     // UIViews /////////////////////////////////////////////////////////////
     let headsetImage: UIImageView =
     {
@@ -34,14 +55,44 @@ class HeadsetAlertController: UIViewController
         return label
     }()
     
+    let prosseguirBtn: UIButton =
+    {
+        let button = UIButton(type: .system)
+        let titleBold = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 23)]
+        let titleString = NSMutableAttributedString(string: "Prosseguir", attributes: titleBold)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setAttributedTitle(titleString, for: .normal)
+        button.configuration = .filled()
+        button.addTarget(self, action: #selector(prosseguirAction), for: .touchUpInside)
+        
+        return button
+    }()
+    
     // Views ////////////////////////////////////////////////////////////////
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         self.view.addSubview(self.headsetImage)
         self.view.addSubview(self.headsetLabel)
+        self.view.addSubview(self.prosseguirBtn)
+        
         self.firstConstraints()
-        self.bottomConstraints(actualObj: headsetLabel, topObj: headsetImage.bottomAnchor, bottomCons: -300, leadingCons: 20, trailingCons: -20)
+        self.bottomConstraints(actualObj: headsetLabel, topObj: headsetImage.bottomAnchor, topCons: 0, bottomCons: -300, leadingCons: 20, trailingCons: -20)
+        self.bottomConstraints(actualObj: prosseguirBtn, topObj: headsetLabel.bottomAnchor, topCons: 220, bottomCons: -30, leadingCons: 20, trailingCons: -20)
+    }
+    
+    // Button Actions /////////////////////////////////////////////////////
+    @objc func prosseguirAction()
+    {
+        navBarAppearance.backgroundColor = UIColor.systemGray6
+        
+        self.navigationController?.navigationBar.standardAppearance = navBarAppearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+        self.navigationController?.navigationBar.compactAppearance = navBarAppearance
+        
+        self.navigationController?.setViewControllers([hvcIdent], animated: true)
     }
     
     // Constraints //////////////////////////////////////////////////////
@@ -55,10 +106,10 @@ class HeadsetAlertController: UIViewController
         ])
     }
     
-    private func bottomConstraints<T>(actualObj: T, topObj: NSLayoutYAxisAnchor, bottomCons: CGFloat, leadingCons: CGFloat, trailingCons: CGFloat) where T: UIView
+    private func bottomConstraints(actualObj: UIView, topObj: NSLayoutYAxisAnchor, topCons: CGFloat, bottomCons: CGFloat, leadingCons: CGFloat, trailingCons: CGFloat)
     {
         NSLayoutConstraint.activate([
-            actualObj.topAnchor.constraint(equalTo: topObj),
+            actualObj.topAnchor.constraint(equalTo: topObj, constant: topCons),
             actualObj.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: bottomCons),
             actualObj.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: leadingCons),
             actualObj.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: trailingCons)
