@@ -19,6 +19,7 @@
 		3D9A4ED2286FBB4400B9C555 /* PeaceAroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */; };
 		3D9A4ED4286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */; };
 		3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */; };
+		3DE83A86287F9FF800A8FF7F /* MusicTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITests.swift; sourceTree = "<group>"; };
 		3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetAlertController.swift; sourceTree = "<group>"; };
+		3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTypeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		3D9A4EAF286FBB4100B9C555 /* PeaceAround */ = {
 			isa = PBXGroup;
 			children = (
+				3DE83A84287F9F9A00A8FF7F /* MusicType */,
 				3D82A5442874DA7700C0F713 /* HomeView */,
 				3D9A4EE2286FBC1000B9C555 /* HeadsetAlert */,
 				3D9A4EE3286FBC6D00B9C555 /* Storyboard */,
@@ -166,6 +169,14 @@
 				3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3DE83A84287F9F9A00A8FF7F /* MusicType */ = {
+			isa = PBXGroup;
+			children = (
+				3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */,
+			);
+			path = MusicType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 			files = (
 				3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */,
 				3D7501052877B756005792F1 /* PullDownMenus.swift in Sources */,
+				3DE83A86287F9FF800A8FF7F /* MusicTypeController.swift in Sources */,
 				3D9A4EB1286FBB4100B9C555 /* AppDelegate.swift in Sources */,
 				3D9A4EB3286FBB4100B9C555 /* SceneDelegate.swift in Sources */,
 				3D7501032877AE78005792F1 /* PullDownMenuEnums.swift in Sources */,

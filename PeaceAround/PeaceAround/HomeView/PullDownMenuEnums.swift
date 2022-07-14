@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum SoundType
+enum SoundType: Int
 {
     case circle
     case sliders
 }
 
-enum SoundMovement
+enum SoundMovement: Int
 {
     case leftRight
     case backFront
@@ -21,7 +21,7 @@ enum SoundMovement
     case noMove
 }
 
-enum SoundColor
+enum SoundColor: Int
 {
     case colorful
     case blackWhite

@@ -34,13 +34,25 @@
                         <viewLayoutGuide key="safeArea" id="XRN-Tu-t24"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="108-Op-feq">
-                        <barButtonItem key="backBarButtonItem" title="Peace Around" id="aAG-kf-nAY"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fkt-Th-HfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3904" y="63"/>
+            <point key="canvasLocation" x="3672" y="53"/>
+        </scene>
+        <!--Music Type Controller-->
+        <scene sceneID="JOZ-8w-xCB">
+            <objects>
+                <viewController storyboardIdentifier="MusicTypeController" id="WZp-Eb-zYE" customClass="MusicTypeController" customModule="PeaceAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyh-QL-XQu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8bO-Gp-Ffo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEa-5f-jxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4613" y="53"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vel-yh-1P5">
@@ -61,6 +73,7 @@
             <point key="canvasLocation" x="1807.2463768115942" y="53.571428571428569"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
