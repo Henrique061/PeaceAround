@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01BCD2288784CC00EDFF37 /* MusicTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01BCD1288784CC00EDFF37 /* MusicTypeCell.swift */; };
 		3D7501032877AE78005792F1 /* PullDownMenuEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7501022877AE78005792F1 /* PullDownMenuEnums.swift */; };
 		3D7501052877B756005792F1 /* PullDownMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7501042877B756005792F1 /* PullDownMenus.swift */; };
 		3D82A5482874DABF00C0F713 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82A5472874DABF00C0F713 /* HomeViewController.swift */; };
+		3D8F3638288B7F5B00E0ACF5 /* Chuva e Trovão.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D8F3637288B7F5B00E0ACF5 /* Chuva e Trovão.wav */; };
+		3D8F363A288B7F6500E0ACF5 /* Montanhas Distantes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D8F3639288B7F6500E0ACF5 /* Montanhas Distantes.wav */; };
 		3D9A4EB1286FBB4100B9C555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */; };
 		3D9A4EB3286FBB4100B9C555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */; };
 		3D9A4EB8286FBB4100B9C555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A4EB6286FBB4100B9C555 /* Main.storyboard */; };
@@ -19,6 +22,21 @@
 		3D9A4ED2286FBB4400B9C555 /* PeaceAroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */; };
 		3D9A4ED4286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */; };
 		3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */; };
+		3DC995BD288892AF00E9DC04 /* SoundSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC995BC288892AF00E9DC04 /* SoundSelectionController.swift */; };
+		3DD1FE4F289CA93A00E54943 /* Manhã de Inverno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE4E289CA93A00E54943 /* Manhã de Inverno.wav */; };
+		3DD1FE51289CA99D00E54943 /* Lagoa Escondida.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE50289CA99D00E54943 /* Lagoa Escondida.wav */; };
+		3DD1FE53289CACAE00E54943 /* Encosta da Montanha.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE52289CACAE00E54943 /* Encosta da Montanha.wav */; };
+		3DD1FE55289CAD8800E54943 /* Serenidade nos Céus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE54289CAD8700E54943 /* Serenidade nos Céus.wav */; };
+		3DD1FE57289CAE6D00E54943 /* Tranquilidade a 30000 Pés.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE56289CAE6D00E54943 /* Tranquilidade a 30000 Pés.wav */; };
+		3DD1FE59289CAFD900E54943 /* Cura ao Ar Livre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE58289CAFD900E54943 /* Cura ao Ar Livre.wav */; };
+		3DD1FE5B289CB0AC00E54943 /* Reino de Coral.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE5A289CB0AB00E54943 /* Reino de Coral.wav */; };
+		3DD1FE5D289CB15900E54943 /* Banho de Sol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE5C289CB15900E54943 /* Banho de Sol.wav */; };
+		3DD1FE5F289CB24100E54943 /* Geada Matinal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE5E289CB24100E54943 /* Geada Matinal.wav */; };
+		3DD1FE63289CCE3E00E54943 /* Pássaros Matinais.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE62289CCE3E00E54943 /* Pássaros Matinais.wav */; };
+		3DD1FE65289CCEB900E54943 /* Chuva em Metal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE64289CCEB900E54943 /* Chuva em Metal.wav */; };
+		3DD1FE67289CCF5E00E54943 /* Vento Fino.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE66289CCF5E00E54943 /* Vento Fino.wav */; };
+		3DD1FE69289CCFB200E54943 /* Chuvisco com Pássaros.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE68289CCFB200E54943 /* Chuvisco com Pássaros.wav */; };
+		3DD1FE6B289CD02900E54943 /* Beira do Oceano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1FE6A289CD02900E54943 /* Beira do Oceano.wav */; };
 		3DE83A86287F9FF800A8FF7F /* MusicTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D01BCD1288784CC00EDFF37 /* MusicTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTypeCell.swift; sourceTree = "<group>"; };
 		3D7501022877AE78005792F1 /* PullDownMenuEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDownMenuEnums.swift; sourceTree = "<group>"; };
 		3D7501042877B756005792F1 /* PullDownMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDownMenus.swift; sourceTree = "<group>"; };
 		3D82A5472874DABF00C0F713 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D8F3637288B7F5B00E0ACF5 /* Chuva e Trovão.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Chuva e Trovão.wav"; path = "../../../../Sons/Chuva e Trovão.wav"; sourceTree = "<group>"; };
+		3D8F3639288B7F6500E0ACF5 /* Montanhas Distantes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Montanhas Distantes.wav"; path = "../../../../Musicas/Montanhas Distantes.wav"; sourceTree = "<group>"; };
 		3D9A4EAD286FBB4100B9C555 /* PeaceAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A4EB0286FBB4100B9C555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9A4EB2286FBB4100B9C555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +77,21 @@
 		3D9A4ED1286FBB4400B9C555 /* PeaceAroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITests.swift; sourceTree = "<group>"; };
 		3D9A4ED3286FBB4400B9C555 /* PeaceAroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceAroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D9A4EE0286FBC0500B9C555 /* HeadsetAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetAlertController.swift; sourceTree = "<group>"; };
+		3DC995BC288892AF00E9DC04 /* SoundSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSelectionController.swift; sourceTree = "<group>"; };
+		3DD1FE4E289CA93A00E54943 /* Manhã de Inverno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Manhã de Inverno.wav"; sourceTree = "<group>"; };
+		3DD1FE50289CA99D00E54943 /* Lagoa Escondida.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lagoa Escondida.wav"; sourceTree = "<group>"; };
+		3DD1FE52289CACAE00E54943 /* Encosta da Montanha.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Encosta da Montanha.wav"; sourceTree = "<group>"; };
+		3DD1FE54289CAD8700E54943 /* Serenidade nos Céus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Serenidade nos Céus.wav"; sourceTree = "<group>"; };
+		3DD1FE56289CAE6D00E54943 /* Tranquilidade a 30000 Pés.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Tranquilidade a 30000 Pés.wav"; sourceTree = "<group>"; };
+		3DD1FE58289CAFD900E54943 /* Cura ao Ar Livre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cura ao Ar Livre.wav"; sourceTree = "<group>"; };
+		3DD1FE5A289CB0AB00E54943 /* Reino de Coral.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Reino de Coral.wav"; sourceTree = "<group>"; };
+		3DD1FE5C289CB15900E54943 /* Banho de Sol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Banho de Sol.wav"; sourceTree = "<group>"; };
+		3DD1FE5E289CB24100E54943 /* Geada Matinal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Geada Matinal.wav"; sourceTree = "<group>"; };
+		3DD1FE62289CCE3E00E54943 /* Pássaros Matinais.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pássaros Matinais.wav"; sourceTree = "<group>"; };
+		3DD1FE64289CCEB900E54943 /* Chuva em Metal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Chuva em Metal.wav"; sourceTree = "<group>"; };
+		3DD1FE66289CCF5E00E54943 /* Vento Fino.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Vento Fino.wav"; sourceTree = "<group>"; };
+		3DD1FE68289CCFB200E54943 /* Chuvisco com Pássaros.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Chuvisco com Pássaros.wav"; sourceTree = "<group>"; };
+		3DD1FE6A289CD02900E54943 /* Beira do Oceano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beira do Oceano.wav"; sourceTree = "<group>"; };
 		3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTypeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +130,36 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
+		3D8F362D288B559700E0ACF5 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				3DD1FE5E289CB24100E54943 /* Geada Matinal.wav */,
+				3DD1FE5C289CB15900E54943 /* Banho de Sol.wav */,
+				3DD1FE5A289CB0AB00E54943 /* Reino de Coral.wav */,
+				3DD1FE58289CAFD900E54943 /* Cura ao Ar Livre.wav */,
+				3DD1FE56289CAE6D00E54943 /* Tranquilidade a 30000 Pés.wav */,
+				3DD1FE54289CAD8700E54943 /* Serenidade nos Céus.wav */,
+				3DD1FE52289CACAE00E54943 /* Encosta da Montanha.wav */,
+				3DD1FE50289CA99D00E54943 /* Lagoa Escondida.wav */,
+				3DD1FE4E289CA93A00E54943 /* Manhã de Inverno.wav */,
+				3D8F3639288B7F6500E0ACF5 /* Montanhas Distantes.wav */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+		3D8F362E288B559D00E0ACF5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3DD1FE6A289CD02900E54943 /* Beira do Oceano.wav */,
+				3DD1FE68289CCFB200E54943 /* Chuvisco com Pássaros.wav */,
+				3DD1FE66289CCF5E00E54943 /* Vento Fino.wav */,
+				3DD1FE64289CCEB900E54943 /* Chuva em Metal.wav */,
+				3DD1FE62289CCE3E00E54943 /* Pássaros Matinais.wav */,
+				3D8F3637288B7F5B00E0ACF5 /* Chuva e Trovão.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		3D9A4EA4286FBB4100B9C555 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +183,9 @@
 		3D9A4EAF286FBB4100B9C555 /* PeaceAround */ = {
 			isa = PBXGroup;
 			children = (
+				3DC2690D2892E2F6003C7AC4 /* SoundSelection */,
+				3D8F362E288B559D00E0ACF5 /* Sounds */,
+				3D8F362D288B559700E0ACF5 /* Musics */,
 				3DE83A84287F9F9A00A8FF7F /* MusicType */,
 				3D82A5442874DA7700C0F713 /* HomeView */,
 				3D9A4EE2286FBC1000B9C555 /* HeadsetAlert */,
@@ -171,10 +240,19 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		3DC2690D2892E2F6003C7AC4 /* SoundSelection */ = {
+			isa = PBXGroup;
+			children = (
+				3DC995BC288892AF00E9DC04 /* SoundSelectionController.swift */,
+			);
+			path = SoundSelection;
+			sourceTree = "<group>";
+		};
 		3DE83A84287F9F9A00A8FF7F /* MusicType */ = {
 			isa = PBXGroup;
 			children = (
 				3DE83A85287F9FF800A8FF7F /* MusicTypeController.swift */,
+				3D01BCD1288784CC00EDFF37 /* MusicTypeCell.swift */,
 			);
 			path = MusicType;
 			sourceTree = "<group>";
@@ -284,8 +362,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A4EBD286FBB4400B9C555 /* LaunchScreen.storyboard in Resources */,
+				3D8F3638288B7F5B00E0ACF5 /* Chuva e Trovão.wav in Resources */,
+				3DD1FE6B289CD02900E54943 /* Beira do Oceano.wav in Resources */,
+				3D8F363A288B7F6500E0ACF5 /* Montanhas Distantes.wav in Resources */,
+				3DD1FE53289CACAE00E54943 /* Encosta da Montanha.wav in Resources */,
+				3DD1FE57289CAE6D00E54943 /* Tranquilidade a 30000 Pés.wav in Resources */,
+				3DD1FE5F289CB24100E54943 /* Geada Matinal.wav in Resources */,
+				3DD1FE5D289CB15900E54943 /* Banho de Sol.wav in Resources */,
+				3DD1FE51289CA99D00E54943 /* Lagoa Escondida.wav in Resources */,
+				3DD1FE67289CCF5E00E54943 /* Vento Fino.wav in Resources */,
+				3DD1FE4F289CA93A00E54943 /* Manhã de Inverno.wav in Resources */,
+				3DD1FE59289CAFD900E54943 /* Cura ao Ar Livre.wav in Resources */,
+				3DD1FE65289CCEB900E54943 /* Chuva em Metal.wav in Resources */,
+				3DD1FE69289CCFB200E54943 /* Chuvisco com Pássaros.wav in Resources */,
 				3D9A4EBA286FBB4400B9C555 /* Assets.xcassets in Resources */,
+				3DD1FE5B289CB0AC00E54943 /* Reino de Coral.wav in Resources */,
+				3DD1FE55289CAD8800E54943 /* Serenidade nos Céus.wav in Resources */,
 				3D9A4EB8286FBB4100B9C555 /* Main.storyboard in Resources */,
+				3DD1FE63289CCE3E00E54943 /* Pássaros Matinais.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +405,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A4EE1286FBC0500B9C555 /* HeadsetAlertController.swift in Sources */,
+				3D01BCD2288784CC00EDFF37 /* MusicTypeCell.swift in Sources */,
+				3DC995BD288892AF00E9DC04 /* SoundSelectionController.swift in Sources */,
 				3D7501052877B756005792F1 /* PullDownMenus.swift in Sources */,
 				3DE83A86287F9FF800A8FF7F /* MusicTypeController.swift in Sources */,
 				3D9A4EB1286FBB4100B9C555 /* AppDelegate.swift in Sources */,

@@ -10,26 +10,7 @@ import UIKit
 
 class HeadsetAlertController: UIViewController
 {
-    let sb: UIStoryboard
-    let hvcIdent: UIViewController
-    let navBarAppearance: UINavigationBarAppearance
-    
-    // inits ////////////////////////////////////////////////////////////////
-    init()
-    {
-        self.sb = UIStoryboard(name: "Main", bundle: nil)
-        self.hvcIdent = sb.instantiateViewController(withIdentifier: "HomeViewController")
-        self.navBarAppearance = UINavigationBarAppearance()
-        super.init()
-    }
-    
-    required init?(coder aDecoder: NSCoder)
-    {
-        self.sb = UIStoryboard(name: "Main", bundle: nil)
-        self.hvcIdent = sb.instantiateViewController(withIdentifier: "HomeViewController")
-        self.navBarAppearance = UINavigationBarAppearance()
-        super.init(coder: aDecoder)
-    }
+    let navBarAppearance = UINavigationBarAppearance()
     
     // UIViews /////////////////////////////////////////////////////////////
     let headsetImage: UIImageView =
@@ -51,6 +32,18 @@ class HeadsetAlertController: UIViewController
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 30)
         label.text = "Use headphones para uma melhor experiência"
+        
+        return label
+    }()
+    
+    let credits: UILabel =
+    {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 2
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 16)
+        label.text = "Sons por: Eryc Matias \nwww.soundimage.org"
         
         return label
     }()
@@ -77,10 +70,12 @@ class HeadsetAlertController: UIViewController
         self.view.addSubview(self.headsetImage)
         self.view.addSubview(self.headsetLabel)
         self.view.addSubview(self.prosseguirBtn)
+        self.view.addSubview(self.credits)
         
         self.firstConstraints()
         self.bottomConstraints(actualObj: headsetLabel, topObj: headsetImage.bottomAnchor, topCons: 0, bottomCons: -300, leadingCons: 20, trailingCons: -20)
         self.bottomConstraints(actualObj: prosseguirBtn, topObj: headsetLabel.bottomAnchor, topCons: 220, bottomCons: -30, leadingCons: 20, trailingCons: -20)
+        self.creditsConstraints()
     }
     
     // Button Actions /////////////////////////////////////////////////////
@@ -92,7 +87,11 @@ class HeadsetAlertController: UIViewController
         self.navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         self.navigationController?.navigationBar.compactAppearance = navBarAppearance
         
-        self.navigationController?.setViewControllers([hvcIdent], animated: true)
+        let hvc = HomeViewController("Mute")
+
+        navigationController?.setViewControllers([hvc], animated: true)
+
+        
     }
     
     // Constraints //////////////////////////////////////////////////////
@@ -113,6 +112,16 @@ class HeadsetAlertController: UIViewController
             actualObj.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: bottomCons),
             actualObj.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: leadingCons),
             actualObj.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: trailingCons)
+        ])
+    }
+    
+    private func creditsConstraints()
+    {
+        NSLayoutConstraint.activate([
+            self.credits.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.credits.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -330),
+            self.credits.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -50),
+            self.credits.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -100)
         ])
     }
 

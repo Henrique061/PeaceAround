@@ -12,20 +12,11 @@ class PullDownMenus
 {
     // attributes /////////////////////////////////////////////////////////////
     private var soundMenuTitle = "Adicionar Som"
-    lazy private var hvc = HomeViewController()
-    let sb: UIStoryboard
-    let hvcIdent: UIViewController
     
     //enums
     private var soundType: SoundType = SoundType.circle
     private var soundMovement: SoundMovement = SoundMovement.leftRight
     private var soundColor: SoundColor = SoundColor.colorful
-    
-    init()
-    {
-        self.sb = UIStoryboard(name: "Main", bundle: nil)
-        self.hvcIdent = sb.instantiateViewController(withIdentifier: "HomeViewController")
-    }
     
     // methods ////////////////////////////////////////////////////////////////
     private func saveData()
@@ -63,11 +54,6 @@ class PullDownMenus
             UIAction(title: self.soundMenuTitle, image: UIImage(systemName: "music.note.list")) {(action) in self.addSoundHandler()}
         ]
         
-        let typeActions = [
-            UIAction(title: "Direção circular") { (action) in self.typeHandler(true) },
-            UIAction(title: "Direção por sliders") { (action) in self.typeHandler(false) }
-        ]
-        
         let moveActions = [
             UIAction(title: "Movimentação Esquerda-Direita") { (action) in self.moveHandler(0) },
             UIAction(title: "Movimentação Atrás-Frente") { (action) in self.moveHandler(1) },
@@ -82,13 +68,6 @@ class PullDownMenus
         
         // states ////////////////////
         loadData()
-        switch self.soundType
-        {
-        case .circle:
-            typeActions[0].state = .on
-        case .sliders:
-            typeActions[1].state = .on
-        }
         
         switch self.soundMovement
         {
@@ -111,15 +90,13 @@ class PullDownMenus
         }
         
         divider.append(UIMenu(title: "", options: .displayInline, children: addSoundAction))
-        divider.append(UIMenu(title: "", options: [.displayInline, .singleSelection], children: typeActions))
         divider.append(UIMenu(title: "", options: [.displayInline, .singleSelection], children: moveActions))
         divider.append(UIMenu(title: "", options: [.displayInline, .singleSelection], children: colorActions))
         
         mainMenu = UIMenu(children: [
             divider[0],
             divider[1],
-            divider[2],
-            divider[3]
+            divider[2]
         ])
         
         return mainMenu
@@ -131,31 +108,6 @@ class PullDownMenus
         NotificationCenter.default.post(name: Notification.Name("pushMusicType"), object: nil)
     }
     
-    private func typeHandler(_ circle: Bool)
-    {
-        DispatchQueue.main.async
-        {
-            // muda pra circulo
-            if circle
-            {
-                self.soundType = .circle
-                self.saveData()
-                
-                NotificationCenter.default.post(name: Notification.Name("changeToCircle"), object: nil)
-            }
-            
-            // muda pra sliders
-            else
-            {
-                self.soundType = .sliders
-                self.saveData()
-                
-                NotificationCenter.default.post(name: Notification.Name("changeToSliders"), object: nil)
-            }
-        }
-        
-    }
-    
     private func moveHandler(_ moveType: Int)
     {
         // 0 = L-R
@@ -163,7 +115,26 @@ class PullDownMenus
         // 2 = Around
         // 3 = No Move
         
-        print("teste move \(moveType)")
+        switch moveType
+        {
+        case 0:
+            self.soundMovement = .leftRight
+            
+        case 1:
+            self.soundMovement = .backFront
+            
+        case 2:
+            self.soundMovement = .around
+            
+        case 3:
+            self.soundMovement = .noMove
+            
+        default:
+            break
+        }
+        self.saveData()
+        
+        NotificationCenter.default.post(name: Notification.Name("moveSound"), object: moveType)
     }
     
     private func colorHandler(_ colorful: Bool)

@@ -54,6 +54,24 @@
             </objects>
             <point key="canvasLocation" x="4613" y="53"/>
         </scene>
+        <!--Sound Selection Controller-->
+        <scene sceneID="aJI-i5-vjH">
+            <objects>
+                <tableViewController storyboardIdentifier="SoundSelectionController" id="POg-ux-lGb" customClass="SoundSelectionController" customModule="PeaceAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="J5Y-ib-pBd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="POg-ux-lGb" id="EPM-eW-NDl"/>
+                            <outlet property="delegate" destination="POg-ux-lGb" id="j38-Rd-hh1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTC-Zh-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5551" y="54"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vel-yh-1P5">
             <objects>
